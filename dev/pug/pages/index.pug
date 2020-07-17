@@ -2,6 +2,52 @@ extends ../layout/main
 
 block variables
 	- var title = 'Главная страница'
-	- var pageClass = 'index-page'
+	- var pageClass = 'index'
 
 block content
+	section.section.first(style='background-image: url("static/img/content/index-1.jpg")')
+		.container
+			.first__top
+				a(href='#').first__catalog-btn Каталог товаров
+				.first__recall
+					.first__phone
+						a(href='tel:+78005553535') 8 800 555 35 35
+					.first__recall-link
+						a(href='#') Перезвоните мне
+			.section__text.first__text
+				.section__heading.first__heading
+					h2 Путешествуй
+				.section__subheading.first__subheading
+					h3 вместе с нами
+	section.section.second(style='background-image: url("static/img/content/index-2.jpg")')
+		.container
+			.section__text.second__text
+				.section__heading.second__heading
+					h2 Мечтай
+				.section__subheading.second__subheading
+					h3 вместе с нами
+			.section__btns
+				.section__btn
+					a(href='#') Товары для туризма
+	section.section.third(style='background-image: url("static/img/content/index-3.jpg")')
+		.container
+			.section__text.third__text
+				.section__heading.third__heading
+					h2 Наслаждайся
+				.section__subheading.third__subheading
+					h3 вместе с нами
+			.section__btns
+				.section__btn
+					a(href='#') Продукты для правильного питания
+				.section__btn.section__btn_yellow
+					a(href='#') Рецепты
+	section.section.fourth(style='background-image: url("static/img/content/index-4.jpg")')
+		.container
+			.section__text.fourth__text
+				.section__heading.fourth__heading
+					h2 Тренируйся #[br] с нами
+			.section__btns
+				.section__btn
+					a(href='#') Тренажеры для дома
+
+

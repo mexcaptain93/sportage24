@@ -54,16 +54,16 @@
       display: block
       background-position: center center
       background-size: cover
-      margin-right: 60px
+      margin-left: 60px
 
       @media $tablet
-        margin-right: 95px
+        margin-left: 95px
 
       @media $mobile
-        margin-right: 33px
+        margin-left: 33px
 
-      &:last-child
-        margin-right: 0
+      &:first-child
+        margin-left: 0
 
       a
         display: block
@@ -95,9 +95,13 @@
           background-image: url('../img/general/cart-active.png')
 
       &_burger
+        display: none
         width: 27px
         height: 24px
         background-image: url('../img/general/burger.png')
+
+        @media $tablet
+          display: block
 
         @media $mobile
           width: 22px
