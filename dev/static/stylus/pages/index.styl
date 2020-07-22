@@ -1,13 +1,15 @@
 .index
 
   .section
-    height: 100vh
+    min-height: 100vh
     background-position: center center
     background-size: cover
     background-repeat: no-repeat
     font-family: $mont
+    padding-bottom: 40px
 
     @media $mobile
+      min-height: auto
       height: 350px
       padding-bottom: 88px
 
@@ -71,7 +73,7 @@
         flex-grow: 1
         justify-content: center
         padding-top: 50%
-        margin-bottom: 0
+        margin-bottom: 20px
 
       @media $mobile
         padding-top: 0
@@ -168,7 +170,7 @@
     height: calc(100vh - 80px)
 
     @media $mobile
-      height: 450px
+      height: 340px
 
     &__top
       display: flex
